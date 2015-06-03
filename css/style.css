@@ -33,7 +33,6 @@ p {
 
 .content {
 	width: 80vw;
-	padding: 5vh;
 	z-index: 5555;
 }
 
@@ -46,7 +45,7 @@ p {
 }
 
 .content.longtext {
-	font-size: 3vw;
+	font-size: 2vw;
 	font-weight: 200;
 	line-height: 4vw;
 	padding: 10vw;
@@ -56,6 +55,14 @@ p {
 	font-size: 5vw;
 	font-weight: 800;
 	margin: 0 0 5vh 0;
+}
+
+.content.longtext .quote{
+	font-family: 'jaf-facitweb';
+	font-size: 3.5vw;
+	font-weight: 100;
+	font-style: italic;
+	margin: 4vw 0 4vw 0;
 }
 
 #menu {
@@ -92,17 +99,17 @@ p {
 }
 
 #intro .content{
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 39vh;
-	text-align: left;
-	z-index: 999;
-	text-shadow: 0.1vw 0.1vw 6vw #4d6b74;;
+  position: absolute;
+  top: 72vh;
+  left: 10vw;
+  /* margin-top: 24vh; */
+  text-align: left;
+  z-index: 999;
+  text-shadow: 0.1vw 0.1vw 6vw #4d6b74;
 }
 
 #intro .content h1{
-	font-size: 9vh;
+	font-size: 9.5vh;
 	font-weight: 600;
 	color: #f8ab4b;
 	margin: 0;
@@ -113,8 +120,8 @@ p {
 
 #intro .content h2{
 	font-size: 4vh;
-	font-weight: 800;
-	color: #000;
+	font-weight: 200;
+	color: #3d5961;
 	margin: 0;
 }
 
@@ -129,7 +136,7 @@ p {
 }
 
 #cars .content {
-  margin: 32vh 0 0 7.5vw;
+  margin: 7.5vh 0 0 7.5vw;
   padding: 2.5vw;
   width: 80vw;
   z-index: 5555;
@@ -137,10 +144,10 @@ p {
 }
 
 #cars .content.headline{
-	margin-top: -93vh;
-	background-color: none;
-	padding: 0;
-	color: #f8ab4b;
+  margin-top: -100vh;
+  margin-bottom: 26vh;
+  padding: 0;
+  color: #f8ab4b;
 }
 
 #cars .content.headline h2{
@@ -229,13 +236,17 @@ font-size: 5vw;
 @media all and (max-aspect-ratio: 3 / 2) {
 
 #intro .content h1{
-	font-size: 6vw;
+	font-size: 6.333vw;
 	margin: 0;
 }
 
 #intro .content h2{
 	font-size: 2.666vw;
 	margin: 0;
+}
+
+#intro .content {
+  left: 10vw;
 }
 
 #menu li {

@@ -9,14 +9,13 @@ $( document ).ready( function() {
 
   $("#intro h1").hide();
 
-  $("#intro h1").delay(500).fadeIn(3000);
+  $("#intro h1").delay(300).fadeIn(7000);
 
 
   $("#intro h2").hide();
 
-  $("#intro h2").delay(300).fadeIn(1500);
+  $("#intro h2").delay(300).fadeIn(1000);
 
-  $("#intro h2").delay(500).fadeOut(1500);
 
 
 
