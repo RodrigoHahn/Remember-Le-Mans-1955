@@ -1,0 +1,198 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: Times, serif; 
+}
+
+h1, h2, h3, h4, ul {
+	margin: 0;
+	padding: 0;
+	font-family: 'jaf-facitweb';
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+
+.content {
+	width: 80vw;
+	padding: 5vh;
+	z-index: 5555;
+}
+
+.content.longtext {
+	font-size: 3vw;
+	font-weight: 200;
+	line-height: 4vw;
+	padding: 10vw;
+}
+
+.content.longtext h2{
+	font-size: 5vw;
+	font-weight: 800;
+	margin: 0 0 5vh 0;
+}
+
+#menu {
+	position: fixed;
+	top: 37.5vh;
+	right: 0;
+	z-index: 9999;
+}
+
+#menu ul {
+	text-align: right;
+	list-style-type: none;
+}
+
+#menu li {
+	background-color: none;
+	font-size: 2vh;	
+	padding: 0.5vh 0 0.5vh 0;
+}
+
+#menu li a{
+	background-color: #FF0;
+	text-decoration: none;
+	color: #000;
+	padding: 0.5vh;
+}
+
+#menu li a:hover{
+	color: #990;
+}
+
+#intro {
+	background-color: red;
+}
+
+#intro .content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 39vh;
+	text-align: left;
+	z-index: 999;
+}
+
+#intro .content h1{
+	font-size: 9vh;
+	font-weight: 600;
+	color: #FF0;
+	margin: 0;
+}
+
+#intro .content h2{
+	font-size: 4vh;
+	font-weight: 800;
+	color: #000;
+	margin: 0;
+}
+
+#background {
+	background-color: #DD0;
+	color: #234255;
+}
+
+#cars {
+	background-color: #234255;
+}
+
+#track {
+	background-color: blue;
+}
+
+#remember {
+	background-color: red;
+}
+
+#result {
+	background-color: green;
+}
+
+#closing {
+	background-color: yellow;
+}
+
+
+.page {
+	width: 100%; 
+	margin: auto; 
+	/*
+	min-height: 100%; 
+	height: auto !important;
+	height: 100%;*/
+}
+
+
+/* Seitenverhältnis HOCH -------------- */
+
+@media all and (max-aspect-ratio: 3 / 2) {
+
+#intro .content h1{
+	font-size: 6vw;
+	margin: 0;
+}
+
+#intro .content h2{
+	font-size: 2.666vw;
+	margin: 0;
+}
+
+#menu li {
+	font-size: 1.333vw;	
+	padding: 0.333vw 0 0.333vw 0;
+}
+
+#menu li a{
+	padding: 0.333vw;
+}
+
+}
+
+
+
+/* VIDEO Background Fullscreen -------------- */
+
+.video-container{
+	position: relative;
+	top:0;
+	left:0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+	background-color: #234255;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#intro video {
+	position: fixed;
+
+}
+
+video.mov-fullscreen{
+	height: 100vh;
+	margin-left: 50vw;
+	margin-top: 0;
+	transform: translateX(-66.6666vh);
+	-webkit-transform: translateX(-66.6666vh);
+	-webkit-filter: sepia(1) hue-rotate(156deg) opacity(0.5);
+ 	filter: sepia(1) hue-rotate(156deg) opacity(0.5);
+}
+
+@media all and (min-aspect-ratio: 4 / 3) {
+
+video.mov-fullscreen{
+	width: 100vw;
+	height: auto;
+	margin-left: 0;
+	margin-top: 50vh;
+	transform: translateY(-37.666vw);
+	-webkit-transform: translateY(-37.666vw);
+}
+
+}
