@@ -1,14 +1,28 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('../font/socicon.eot');
+    src: url('../font/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../font/socicon.woff') format('woff'),
+         url('../font/socicon.ttf') format('truetype'),
+         url('../font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+
 html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
   font-family: Times, serif; 
+  font-size: 1.5vw
 }
 
 h1, h2, h3, h4, ul {
 	margin: 0;
-	padding: 0;‘
-	font-family: 'jaf-facitweb', 'Helvetice Neue';
+	padding: 0;
+	font-family: 'jaf-facitweb', 'Helvetica Neue';
 }
 
 p {
@@ -21,6 +35,14 @@ p {
 	width: 80vw;
 	padding: 5vh;
 	z-index: 5555;
+}
+
+.content.overlay {
+	position: absolute;
+}
+
+#footer .content{
+	padding: 10vw;
 }
 
 .content.longtext {
@@ -55,14 +77,14 @@ p {
 }
 
 #menu li a{
-	background-color: #FF0;
+	background-color: #4d6b74;
 	text-decoration: none;
-	color: #000;
-	padding: 0.5vh;
+	color: #f8ab4b;
+	padding: 0.6vh;
 }
 
 #menu li a:hover{
-	color: #990;
+	color: #fff;
 }
 
 #intro {
@@ -76,13 +98,17 @@ p {
 	margin-top: 39vh;
 	text-align: left;
 	z-index: 999;
+	text-shadow: 0.1vw 0.1vw 6vw #4d6b74;;
 }
 
 #intro .content h1{
 	font-size: 9vh;
 	font-weight: 600;
-	color: #FF0;
+	color: #f8ab4b;
 	margin: 0;
+	/*outline
+  	-webkit-text-stroke-color: #f8ab4b;
+  	-webkit-text-stroke-width: 0.2vw; */
 }
 
 #intro .content h2{
@@ -93,38 +119,108 @@ p {
 }
 
 #background {
-	background-color: #DD0;
-	color: #234255;
+	background-color: #f8ab4b;
+	color: #3d5961;
 }
 
 #cars {
-	background-color: #234255;
+	background-color: #3d5961;
+	padding: 0 0 7.5vw 0;
 }
 
-#track {
-	background-color: blue;
+#cars .content {
+  margin: 32vh 0 0 7.5vw;
+  padding: 2.5vw;
+  width: 80vw;
+  z-index: 5555;
+  position: inherit;
 }
 
-#remember {
-	background-color: red;
+#cars .content.headline{
+	margin-top: -93vh;
+	background-color: none;
+	padding: 0;
+	color: #f8ab4b;
 }
 
-#result {
-	background-color: green;
+#cars .content.headline h2{
+font-size: 5vw;
+}
+
+#cars .content.text{
+   background-color: #f8ab4b;
+   color: #3d5961;
+   font-size: 3vw;
+	font-weight: 200;
+	line-height: 4vw;
+}
+
+
+#cars .fadeout {
+  margin: -69.8vh 0 0 0;
+  width: 100vw;
+  height: 70vh;
+  /* background-color: blue; */
+  background-image: url(../media/fadeout.png);
+  background-size: contain;
+  z-index: 5500;
+  position: absolute;
+}
+
+#infographic {
+	background-color: #f8ab4b;
+	color: #3d5961;
+}
+
+#infographictwo {
+	background-color: #f8ab4b;
+	color: #3d5961;
+}
+
+#following {
+	background-color: #f8ab4b;
+	color: #3d5961;
 }
 
 #closing {
-	background-color: yellow;
+	background-color: #3d5961;
+	color: #f8ab4b;
+}
+
+#footer {
+	background-color: #f8ab4b;
+	color: #3d5961;
 }
 
 
 .page {
 	width: 100%; 
 	margin: auto; 
+	  position: relative;
 	/*
 	min-height: 100%; 
 	height: auto !important;
 	height: 100%;*/
+}
+
+.footer01 {
+	float: right;
+}
+
+.footer01 a{
+	color: #3d5961;
+	text-decoration: none;
+}
+
+.footer01 p {
+	display: inline;
+	vertical-align: 3.4vw;
+}
+
+.socialmedia{
+	font-family: 'socicon'  !important;
+	font-size: 5vw;
+	margin: 0 0 0 2vw;
 }
 
 
@@ -152,7 +248,24 @@ p {
 }
 
 }
+/* Image Background Fullscreen -------------- */
 
+.graphic-container{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.graphic-container img{
+	position: absolute;
+	height: 100vh;
+	margin-left: 50vw;
+	margin-top: 0;
+	transform: translateX(-88.888vh);
+	-webkit-transform: translateX(-88.888vh);
+}
 
 
 /* VIDEO Background Fullscreen -------------- */
@@ -163,36 +276,65 @@ p {
 	left:0;
 	height: 100vh;
 	width: 100vw;
-	z-index: 0;
-	background-color: #234255;
+	background-color: #3d5961;
 	overflow: hidden;
+	z-index: 0;
+}
+
+video {
+	position: absolute;
 	z-index: 0;
 }
 
 #intro video {
 	position: fixed;
+	z-index: 10;
+	-webkit-filter: opacity(0.7);
+ 	filter: opacity(0.7);
 
+}
+
+#cars video {
+	z-index: 5;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+}
+
+#cars .video-container {
+	height: 130vh;
 }
 
 video.mov-fullscreen{
 	height: 100vh;
 	margin-left: 50vw;
 	margin-top: 0;
-	transform: translateX(-66.6666vh);
-	-webkit-transform: translateX(-66.6666vh);
+	transform: translateX(-88.888vh);
+	-webkit-transform: translateX(-88.888vh);
+	/*
 	-webkit-filter: sepia(1) hue-rotate(156deg) opacity(0.5);
  	filter: sepia(1) hue-rotate(156deg) opacity(0.5);
+ 	*/
 }
 
-@media all and (min-aspect-ratio: 4 / 3) {
+@media all and (min-aspect-ratio: 16 / 9) {
 
 video.mov-fullscreen{
 	width: 100vw;
 	height: auto;
 	margin-left: 0;
 	margin-top: 50vh;
-	transform: translateY(-37.666vw);
-	-webkit-transform: translateY(-37.666vw);
+	transform: translateY(-28.125vw);
+	-webkit-transform: translateY(-28.125vw);
+}
+
+.graphic-container img{
+	width: 100vw;
+	height: auto;
+	margin-left: 0;
+	margin-top: 50vh;
+	transform: translateY(-28.125vw);
+	-webkit-transform: translateY(-28.125vw);
 }
 
 }
