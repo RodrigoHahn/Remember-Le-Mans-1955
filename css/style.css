@@ -115,6 +115,8 @@ video {
 #menu li {
  line-height: 22px;
   margin-right: 3.1vw;
+ -webkit-filter: brightness(2.5);
+ 	filter: brightness(2.5);
 }
 
 #menu li img {
@@ -122,10 +124,10 @@ video {
 }
 
 #menu .nav-active, #menu a:hover , #menu a:active {
-	-webkit-filter: brightness(0.5);
- 	filter: brightness(0.5);
- 	-webkit-transition: 1s;
- 	transition: 1s;
+	-webkit-filter: brightness(1);
+ 	filter: brightness(1);
+ 	-webkit-transition: 0.5s;
+ 	transition: 0.5s;
 }
 
 #menu .nav-active img,  #menu a:active img{
@@ -697,7 +699,7 @@ h3 a{
 	left:0;
 	height: 100vh;
 	width: 100vw;
-	background-color: #0098A0;
+	background-color: #313131;
 	overflow: hidden;
 	z-index: 0;
 }
