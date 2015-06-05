@@ -124,15 +124,15 @@ video {
 }
 
 #menu .nav-active, #menu a:hover , #menu a:active {
-	-webkit-filter: brightness(1);
- 	filter: brightness(1);
+	-webkit-filter: brightness(0.62) sepia(1) hue-rotate(138deg) saturate(3);
+ 	filter: brightness(0.62) sepia(1) hue-rotate(138deg) saturate(3);
  	-webkit-transition: 0.5s;
  	transition: 0.5s;
 }
 
 #menu .nav-active img,  #menu a:active img{
- 	-webkit-transform: scale(2);
-	transform: scale(2);
+ 	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 

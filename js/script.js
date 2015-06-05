@@ -213,10 +213,7 @@ $video_crash.bind("ended", function() {
           $('#crashvideo video').attr("autoplay");
         }
 */
-      $('#startmov').on(pause, function() {
-        // show pause button
-        $play_button.fadeIn(1000);
-      });
+
 
       // Alle internen Links auswählen
     $('a[href*=#]').bind("click", function(event) {
@@ -231,6 +228,11 @@ $video_crash.bind("ended", function() {
       // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
       }, 1000 , function (){location.hash = ziel;});
      });
+
+          $('#startmov').on(pause, function() {
+        // show pause button
+        $play_button.fadeIn(1000);
+      });
   return false;
 
 
