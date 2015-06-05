@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+  <!--
   <div id="menu">
     <ul>
       <li><a href="#intro">intro video</a></li>
@@ -30,17 +30,36 @@
       <li><a href="#closing">closing text</a></li>
     <ul>
   </div>
+  -->
+  <div id="nav-anchor"></div>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#intro"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#background"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#cars"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#startraceancher"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#crashvideo" id="crashstart"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#infographic"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#infographictwo"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#following"><img src="media/menu-dot.png"></a></li>
+      <li><a href="#closing"><img src="media/menu-dot.png"></a></li>
+    <ul>
+  </nav>
+
 
   <div id="intro" class="page fullscreen-test">
 
         <div class="video-container">
+          <img src="media/intro.jpg" height="100%" class="display-none">
           <video autoplay loop class="mov-fullscreen">
-            <source  src="media/Apokalypse in Le Mans - Das Rennen in den Tod.mp4" type="video/mp4">
+            <source  src="media/intro.mp4" type="video/mp4" poster="media/intro.jpg">
           </video>
+            
         </div>
 
         <div class="content">
-          <h1>Le Mans 1955</h1>
+          <h1>Le Mans 1955</h1></br>
           <h2>remembering the worst crash in motorsport history</h2>
         </div>
 
@@ -48,29 +67,30 @@
 
   <div id="background" class="page teaser-page">
     <div class="content longtext">
-
       <h2>Background</h2>
-
       <p>
-        1955 Le Mans was labeled as WW2 on the track. Mercedes and the might of German manufacturing versus the 'Garagistes' of Great Britain and their low-key high-success rate of garage-built manufacturing. New technologies including disc brakes and aero brakes were being introduced along with ever advancing speeds and lightweight chassis development. But all was not the same for Circuit de La Sarthe. 
-      </p>
+        </br>
+        1955 Le Mans was labeled as WW2 on the track. Mercedes and the might of German manufacturing versus the 'Garagistes' of Great Britain and their low-key high-success rate of garage-built manufacturing. New technologies including disc brakes and aero brakes were being introduced along with ever advancing speeds and lightweight chassis development. 
 
       <p class="quote">
-        Hey dude I'm a quote.
+        ”It was a dated and dangerous track that was suited for the cars of 20 years prior.“
       </p>
 
       <p>
-        It was a dated and dangerous track that was suited for the cars of 20 years prior; not the 180 MPH sportscars that were inches from death every lap. The front straight featured a slight kink onto the pit straight with completely exposed pitting area. Safety was regarded as something that might happen, and preventative measures were not implemented until an accident occured highlighting the issue.
+        But all was not the same for Circuit de La Sarthe. It was a dated and dangerous track that was suited for the cars of 20 years prior; not the 180 MPH sportscars that were inches from death every lap. The front straight featured a slight kink onto the pit straight with completely exposed pitting area. Safety was regarded as something that might happen, and preventative measures were not implemented until an accident occured highlighting the issue.
       </p>
+      <!--
+      <img src="media/start-race.jpg">
+      -->
     </div>
   </div>
 
   <div id="cars" class="page fullscreen-test">
 
         <div class="video-container">
-
+          <img src="media/cars.jpg" height="100%" class="display-none">
           <video autoplay loop class="mov-fullscreen">
-            <source  src="media/intro_loop.mp4" type="video/mp4">
+            <source  src="media/cars.mp4" type="video/mp4" poster="media/cars.jpg">
           </video>
 
         </div>
@@ -84,97 +104,384 @@
         </div>
 
         <div class="content text">
+       
+          <div class="col col1">
+            <h2>Pierre Levegh</h2>
+            <img src="media/PierreLevegh.jpg">
+          </div>
 
-            <h2>Lalala die Hex ist da! (Cars)</h2>
+          <div class="col col2">
             <p>
-                1955 Le Mans was labeled as WW2 on the track. Mercedes and the might of German manufacturing versus the 'Garagistes' of Great Britain and their low-key high-success rate of garage-built manufacturing. New technologies including disc brakes and aero brakes were being introduced along with ever advancing speeds and lightweight chassis development. But all was not the same for Circuit de La Sarth.
+              The 49 year old was hired by Mercedes as a token to the French and giving him a shot at winning after coming within an hour of winning the race solely himself when he suffered engine failure in 1952. He was a legend in France for his 23 hour straight drive for victory, and was a fan favorite of the race. Though Levegh died on the track, he may have saved Fangio by giving a hand-signal to slow down.
             </p>
+          </div>
+
+          <div class="col col3">
+            <h3>Mercedes-Benz</h3>
+            <img src="media/LeMans_Wagen_Techn.Zeichnung_weiß_-03.svg">
+            <p>
+              The 300 SLR was revolutionary in its design. It featured a lightweight, magnesium honeycomb chassis that made an incredible strong but light sportscar. It also featured an air brake to help it's drum brakes compete with Jaguar's superior disc brakes.
+            </p>
+          </div>
+
+          <div class="clear-float"> </div>
+          
+        </div>
+
+        <div class="content text">
+       
+          <div class="col col1">
+            <h2>Mike Hawthorn</h2>
+            <img src="media/MikeHawthorn.jpg">
+          </div>
+
+          <div class="col col2">
+            <p>
+              Mike Hawthorn was born in Mexborough, West Riding of Yorkshire, England. Hawthorne pushed like every lap was his last and Fangio diligently returned the favor. His father owned the Tourist Trophy Garage in Farnham, franchised to supply and service several high performance brands including Jaguar and Ferrari.
+            </p>
+
+          </div>
+
+          <div class="col col3">
+            <h3>Jaguar</h3>
+            <img src="media/LeMans_Wagen_Techn.Zeichnung_weiß_-01.svg">
+
+            <p>
+              Jaguar's legendary D-Type is still one of the most beautiful and loved cars 60 years later. It featured revolutionary aeronautic design for a more streamlined and slippery top speed, and also featured its distinctive rear fin to stabilize the car at high speed.
+            </p>
+          </div>
+
+          <div class="clear-float"> </div>
   
         </div>
 
         <div class="content text">
+       
+          <div class="col col1">
+            <h2>Lance Macklin</h2>
+            <img src="media/LanceMacklin.jpg">
+          </div>
 
-            <h2>Lalala die Hex ist da! (Cars)</h2>
+          <div class="col col2">
             <p>
-                1955 Le Mans was labeled as WW2 on the track. Mercedes and the might of German manufacturing versus the 'Garagistes' of Great Britain and their low-key high-success rate of garage-built manufacturing. New technologies including disc brakes and aero brakes were being introduced along with ever advancing speeds and lightweight chassis development. But all was not the same for Circuit de La Sarth.
+              Macklin was born in Kensington, and educated at Eton College. He volunteered for service with the Royal Navy in 1939 and (in line with his father's business) was assigned to work on motor gun boats. Lance Macklin was trying to prove he could be a racer after WWII. He participated in 15 Formula One World Championship Grands Prix, debuting on 18 May 1952.
             </p>
+          </div>
+
+          <div class="col col3">
+            <h3>Austin</h3>
+            <img src="media/LeMans_Wagen_Techn.Zeichnung_weiß_-02.svg">
+            <p>
+              Built primarily with racing in mind, the aluminium-bodied "100S" (for Sebring) model developed 132 bhp (98 kW) at 4700 rpm. Only 50 production cars were made, plus an additional five works development/special test cars hand built by the Donald Healey Motor Company at Warwick.
+            </p>
+          </div>
+
+
+          <div class="clear-float"> </div>
   
         </div>
 
-        <div class="content text">
+  </div>
 
-            <h2>Lalala die Hex ist da! (Cars)</h2>
-            <p>
-                1955 Le Mans was labeled as WW2 on the track. Mercedes and the might of German manufacturing versus the 'Garagistes' of Great Britain and their low-key high-success rate of garage-built manufacturing. New technologies including disc brakes and aero brakes were being introduced along with ever advancing speeds and lightweight chassis development. But all was not the same for Circuit de La Sarth.
-            </p>
+  <div id="startraceancher">
+
+
+    <div id="startrace" class="page teaser-page">
+
+       <div class="graphic-container">
+
+          <img src="media/start-race.jpg">
+
+       </div>
+
+
+      <div class="content longtext">
+
+        <h2>Start, Race and Crash</h2>
+        
+        <h3 class="sth31">The Start</h3>
+
+        <p class="firstp">
+          After the drivers sprinted to their vehicles, the race started rather uneventful. During the first lap, the key protagonists had already positioned themselves in the top ten. At the end of the opening lap, local hero Levegh was down in seventh place, ahead of his Mercedes team-mates. 
+        </p>
+        <p class="quote">
+          "His battle with Hawthorn became so intense, the Englishman missed several calls to pit."
+        </p>
+         <p>
+          It was good politics, but on the next lap Fangio made his move. His battle with Hawthorn became so intense, the Englishman missed several calls to pit.
+        </p>
+
+
+
+ 
+        <h3 class="sth3">The Race</h3>
+
+
+      <p>
+          By Lap 35, the pace was blistering as Hawthorne and Fangio handed the lead over and over. At this point, both lead cars were about to lap the slower-paced 300 SLR of Pierre Levegh and the even slower Austin-Healey of Lance Macklin. Needing to refuel, Mike Hawthorne need a fast pit stop to continue to challenge the Mercedes. Pierre Levegh was in front of the two lead cars, and was racing heavily to pass the AH of Macklin to get out of the way. Macklin, on the pit side of the front straight, didn't have the speed and was about to be overtaken by Hawthorne, Levegh, and finally Fangio. Hawthorne passes Macklin just before the front stretch kink and immediately begins to brake, saving as much time as possible for pit entry. 
+        </p>
   
+
+        <h3 class="sth3">The Crash</h3>
+
+
+      <p>
+          The disc brakes work hard to slow the car in front of the unaware Lance Macklin. Macklin then swerves left to avoid the slowing D-Type and continue racing down the front straight. His car swerves in front of the hard charging Levegh as again he is trying to get out of the way of his teammate following close behind. As the track is just 3 car widths wide at this point, Macklins collision avoidance with the D-Type leaves him slow, and directly in the path of the 300 SLR which cannot brake to avoid it at the last second. The 300 SLR vaults over the back of the AH100 and lands on the 5 foot earth embankment on the spectator side of the Pit Straight.
+        </p>
+
+        <p class="quote">
+          "As the 300 SLR impacts, it tumbles and disintegrates."
+        </p>
+
+         <p>
+          As the 300 SLR impacts, it tumbles and disintegrates end over end. Levegh is thrown from the car into the ditch between the embankment and the crowd picket fence and is killed instantly. The front of the Mercedes – front axle, engine, and hood – are launched into the extremely tight-packed crowd. The car's engine can be seen tumbling into the stands, the hood slicing through the crowd as well. The Austin-Healey meanwhile is hit and spun into the embankment and strikes a spectator attempting to avoid the explosion of Levegh's Mercedes, killing the spectator. Macklin struck the pit wall before finally coming to a rest against the stand embankment and hopped out. 
+        </p>
+
+
+          <img src="media/artikel_trenner.jpg">
+
+         <p>
+          As the 300 SLR tumbled to a stop, its high Magnesium infused bodywork and chassis ignited after the fuel tank ruptured and lit the car past its ignition point. The car burned hot for 20 minutes, with even more spectators burned and some fatally injured when marshals attempted throwing water on the chassis, causing molten balls to explode and be sent into the crowd. The chassis would be extinguished after most of the car was burnt beyond recognition.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+   <div id="crashvideo" class="page fullscreen-test">
+
+        <div class="video-container">
+          <img src="media/crash.jpg" height="100%" class="display-none">
+          <video id="startmov" class="mov-fullscreen">
+            <source  src="media/crash.mp4" type="video/mp4" poster="media/crash.jpg">
+          </video>
+          <div class="playbutton">
+            <img src="media/button-play_xl.png">
+          </div>
         </div>
 
   </div>
 
   <div id="infographic" class="page">
 
-     <div class="graphic-container">
+     <div class="content longtext">
 
-        <img src="media/Bildschirmfoto 2015-06-03 um 11.42.50 2.png">
+        <h2>Course of Events</h2>
+        <img src="media/LeMans_Crashhergang_1.5_-03.png" class="legende">
 
-        <div class="content overlay">
-          <h2>Info Graphic Two</h2>
+        <div class="row">
+          <img src="media/LeMans_Crashhergang_1.5_-02.png">
+          <h3>Phase 1</h3>
+          <p>
+            Lance Macklin is overtaken by Mike Hawthorn who breaks heavily in front of him to reach the pit. 
+          </p>
         </div>
+        <div class="clear-float"> </div>
 
-     </div>
+        <div class="row">
+          <img src="media/LeMans_Crashhergang_1.5_-04.png">
+          <h3>Phase 2</h3>
+          <p>
+            Macklin has to steer left to avoid Hawthorn. Pierre Levegh crashes into the heck of Macklin and gets catapulted off the road over the track barrier. 
+          </p>
+        </div>
+        <div class="clear-float"> </div>
+
+        <div class="row">
+          <img src="media/LeMans_Crashhergang_1.5_-05.png">
+          <h3>Phase 3</h3>
+          <p>
+            The force of impact pushes Macklin into the right wall while Hawthorn comes to a halt in the pit. 
+          </p>
+        </div>
+        <div class="clear-float"> </div>
+
+        <div class="row">
+          <img src="media/LeMans_Crashhergang_1.5_-01.png">
+          <h3>Phase 4</h3>
+          <p>
+            Macklin comes to a rest against the stand, while Leveghs car catches fire and parts of it continue into the crowd.
+          </p>
+        </div>
+        <div class="clear-float"> </div>
+
+      </div>
 
   </div>
 
-  <div id="infographictwo" class="page fullscreen-test">
 
-    <div class="graphic-container">
+  <div id="infographictwo" class="page teaser-page">
 
-        <img src="media/LeMans_ubersicht.png">
+      <div class="content headline">
+        <h2>The Tragedy on Film</h2>
+      </div>
 
-        <div class="content overlay">
-          <h2>Info Graphic</h2>
-        </div>
+      <div class="infographic-wraper i-w01">
+          <img src="media/LeMans_Übersicht_1.4_-01.svg" class="infomap">
+          <img src="media/button-play.png" class="infoicon infoicon01">
+          <img src="media/button-pic.png" class="infoicon infoicon02">
+      </div>
 
-     </div>
+      <div class="infographic-wraper i-w02">
+          <img src="media/LeMans_Übersicht_1.4_-02.svg" class="infomap">
+          <img src="media/button-play.png" class="infoicon infoicon03">
+          <img src="media/button-play.png" class="infoicon infoicon04">
+          <img src="media/button-play.png" class="infoicon infoicon05">
+          <img src="media/button-pic.png" class="infoicon infoicon06">
+      </div>
+
+      <div class="infographic-wraper i-w03">
+          <img src="media/LeMans_Übersicht_1.4_-03.svg" class="infomap">
+          <img src="media/button-play.png" class="infoicon infoicon07">
+          <img src="media/button-play.png" class="infoicon infoicon08">
+          <img src="media/button-play.png" class="infoicon infoicon09">
+          <img src="media/button-pic.png" class="infoicon infoicon10">
+          <img src="media/button-pic.png" class="infoicon infoicon11">
+      </div>
+
+
+      <div class="video desaster-vid01">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rz2VezfEWXQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video desaster-vid02">
+                <img src="media/before/BTnHlFQ.jpg" >
+      </div>
+
+<!-- while -->
+
+      <div class="video desaster-vid03">
+                <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=66&end=80&cid=6154418"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=66&end=80&cid=6154418" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+      </div>
+
+      <div class="video desaster-vid04">
+                <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=JEk85gKJN6k&start=4&end=9&cid=6154625"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=JEk85gKJN6k&start=4&end=9&cid=6154625" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+      </div>
+
+
+      <div class="video desaster-vid05">
+                <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=JEk85gKJN6k&start=82&end=91.79&cid=6154678"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=JEk85gKJN6k&start=82&end=91.79&cid=6154678" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+
+      </div>
+
+    <div class="video desaster-vid06">
+                <img src="media/while/NOBUUDW.jpg" >
+      </div>
+
+
+<!-- after -->
+
+      <div class="video desaster-vid07">
+              <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=bcDwxo30gro&start=183&end=197&cid=6154298"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=bcDwxo30gro&start=183&end=197&cid=6154298" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+      </div>
+
+      <div class="video desaster-vid08">
+              <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=104&end=108&cid=6154464"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=104&end=108&cid=6154464" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+      </div>
+
+      <div class="video desaster-vid09">
+              <object width="425" height="344"><param name="movie" value="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=85&end=90&cid=6154435"></param><embed src="http://swf.tubechop.com/tubechop.swf?vurl=7-vITC9iDFU&start=85&end=90&cid=6154435" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+      </div>
+
+      <div class="video desaster-vid10">
+              <img src="media/after/HXCh9wV.jpg" >
+      </div>
+
+      <div class="video desaster-vid11">
+              <img src="media/after/moA5n5V.jpg" >
+      </div>
+
+      <div class="video-box"> </div>
 
   </div>
+
+
+  <div id="infographic-control" class="page teaser-page">
+    <div id="i-c01" class="i-cActive"> 1. Before the Crash </div>
+    <div id="i-c02"> 2. As it happens </div>
+    <div id="i-c03"> 3. The Horror after </div>
+  </div>
+
 
   <div id="following" class="page teaser-page">
     <div class="content longtext">
       <h2>The Aftermath</h2>
-      <p>
-      Immediately following the crash, spectators were told minimal details of the accident, as to keep the roadways clear for emergency personnel. The organizers would receive flak for not abandoning the race after the aftermath of the the disaster was concluded. Word quickly began to spread through the pits and to another Mercedes driver, American John Fitch, who suggested to Mercedes to withdraw from the race. At midnight, Mercedes pulled the then-leading car of Fangio-Moss, and John Fitch's 300 SLR. Mercedes after 1955 would not again race for 30 years. Mike Hawthorne went on to take victory and was scorned by the French papers for his victory and celebrations after the race. He went on to win the Formula 1 World Championship but would die in a traffic accident in 1959 ironically overtaking a 300SL. Lance Macklin refuted Mike Hawthornes claim that he was at fault, and sued Mike Hawthorne for libel.
-      Le Mans changed after this, the kink was lessened, pit road was widened, as well as pit straight. The old stands were torn down, moved back, and rebuilt for further safety, and the track around the front straight was made safer. It is still the worst tragedy and loss of human life in motorsports history. It was the darkest day for motorsports, caused one car manufacturer to withdraw from racing for 30 years, and caused a nation to ban motorsports in their country. It serves as a focal point for the 'Wild West' attitudes of safety and speed between the awakened need for safety. John Fitch dedicated his life after racing to improve safety not only in race cars but road cars as well. It is something we should never forget as we reflect on 60 years since its tragedy.
-      </p>
+        <p>
+        Immediately following the crash, spectators were told minimal details of the accident, as to keep the roadways clear for emergency personnel. The organizers would receive flak for not abandoning the race after the aftermath of the the disaster was concluded. Word quickly began to spread through the pits and to another Mercedes driver, American John Fitch, who suggested to Mercedes to withdraw from the race. At midnight, Mercedes pulled the then-leading car of Fangio-Moss, and John Fitch's 300 SLR. Mercedes after 1955 would not again race for 30 years. Mike Hawthorne went on to take victory and was scorned by the French papers for his victory and celebrations after the race. He went on to win the Formula 1 World Championship but would die in a traffic accident in 1959 ironically overtaking a 300SL. 
+        </p>
+
+
+        <p class="quote">
+          "Mercedes after 1955 would not again race for 30 years."
+        </p>
+
+        <p>
+          Le Mans changed after this, the kink was lessened, pit road was widened, as well as pit straight. The old stands were torn down, moved back, and rebuilt for further safety, and the track around the front straight was made safer.
+        </p>
+
     </div>
   </div>
 
   <div id="closing" class="page">
     <div class="content longtext">
-      <h2>Danke Danke</h2>
       <p>
-      Hat Spaß gemacht!
+        It was the darkest day for motorsports, caused one car manufacturer to withdraw from racing for 30 years, and caused a nation (Switzerland) to ban motorsports in their country. It serves as a focal point for the 'Wild West' attitudes of safety and speed between the awakened need for safety.<br><br>
       </p>
+      <p>
+        <strong>It is something we should never forget as we reflect on 60 years since its tragedy.</strong>
+      </p>
+    </div>
+  </div>
+
+  <div id="share" class="page">
+    <div class="content">
+      <div class="footer01">
+          <a href="http://twitter.com/home?status=Remember Le Mans 1955 www.rememberlemans.com"><span class="socialmedia" target="_blank" alt="Twitter">a</span></a>
+          <a href="http://www.facebook.com/share.php?u=http://www.rememberlemans.com"><span class="socialmedia" target="_blank" alt="Facebook">b</span></a>
+          <a href=https://plus.google.com/share?url=http://www.rememberlemans.com><span class="socialmedia" target="_blank" alt="Pinterest">c</span></a>
+      </div>
+
+      <div class="footer02">
+        Share this story!
+      </div>
     </div>
   </div>
 
   <div id="footer" class="page">
     <div class="content">
       
-      <div class="footer01">
-          <p>Share</p>
-          <a href="http://twitter.com/home?status=Remember Le Mans 1955 www.rememberlemans.com"><span class="socialmedia" target="_blank" alt="Twitter">a</span></a>
-          <a href="http://www.facebook.com/share.php?u=http://www.rememberlemans.com"><span class="socialmedia" target="_blank" alt="Facebook">b</span></a>
-          <a href="http://pinterest.com/pin/create/button/?url=http://www.rememberlemans.com&media=http://www.rememberlemans.com&description=Remember Le Mans"><span class="socialmedia" target="_blank" alt="Pinterest">d</span></a>
-      </div>
+      <h2>About</h2>
 
-      <div class="footer02">
-        <strong>Quellen:</strong></br>
-        asdfafn aofgsdjkg </br>
-        asdfafn aofgsdjkg </br>
-        asdfafn aofgsdjkg </br>
-      </div>
+      <p>
+        This site was concepted, designed and built by <a href="http://franzmattuschka.com">Franz Mattuschka</a>, <a href="https://www.behance.net/v_d_w">Alexander Venus</a> and <a href="http://christian-ernst.com">Christian Ernst</a> over the course of a single week as an university project. It‘s a noncommercial memorial website to remember the accident and its victims.
+      </p>
+
+      <p>
+        Check out the project on <a href=" ">Behance! </a>
+      </p>
+
+       <p>
+        If you like the site or have any questions, feel free to drop us a line at <a href="mailto:hello@rememberlemans.com">hello@rememberlemans.com</a> !
+      </p>
+
+      <p>
+        The website was inspired by the awesome <a href="https://np.reddit.com/r/wec/comments/37z81c/the_1955_le_mans_disaster_60_years_thread/">reddit post</a> on the topic by CookieMonsterFL. Thank you for the huge support!
+      </p>
+
+      <p>
+        Thanks also to <a href="https://twitter.com/harryfk">Harry Keller</a> and <a href="https://twitter.com/SaschaSigl">Sascha Sigl</a> for making this a very fun and interesting experience, that we got to take a lot away from. 
+      </p>
+
+       <p>
+        If you are a total coding monkey and would like to optimize our website performance or see how we did stuff, have a look at our <a href="https://github.com/Fraaanz/Remember-Le-Mans-1955">Gihub repository</a>. 
+      </p>
+
+    </div>
+
+    <div class="content">
+
+      <h3><a href="imprint/index.html">Sources & Imprint ></h3></a>
 
     </div>
 
