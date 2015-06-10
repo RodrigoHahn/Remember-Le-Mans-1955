@@ -1000,6 +1000,12 @@ p {
   line-height: 7.5vw;
 }
 
+.imprint .content p {
+  word-wrap: break-word;
+  font-size: 2vw !important;
+  line-height: 3.5vw !important;
+}
+
 .sth31 {
   display: inline-block;
   margin: 23vw 0 -16vw 0;
