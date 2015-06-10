@@ -838,13 +838,8 @@ p {
   bottom: 16vw;
 }
 
-.content.longtext h2{
+.content.longtext h2 {
   font-size: 7.5vw;
-}
-
-#footer h2, #footer h3{
-  font-size: 7.5vw;
-  line-height: 24vw;
 }
 
 .content.longtext {
@@ -971,11 +966,11 @@ p {
 }
 
 #infographictwo h2 {
-  font-size: 3.5vw;
+  font-size: 7.5vw;
 }
 
 #infographic-control div {
-  font-size: 2.5vw;
+  font-size: 4.5vw;
  }
 
 #infographic-control {
@@ -991,9 +986,8 @@ p {
 }
 
 #footer .content, #share .content{
-	width: 83vw;
+	width: 100vw;
 }
-
 
 #footer .content p {
 	font-size: 5.5vw;

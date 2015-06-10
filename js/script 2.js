@@ -1,8 +1,11 @@
 $( document ).ready( function() {
 
 
-  $(".playbutton, .i-w02, .i-w03").hide();
+  $("#intro video, #intro .content, .playbutton, .i-w02, .i-w03").hide();
 
+
+  $("#intro .content").delay(300).fadeIn(4000);
+  $("#intro video").delay(300).fadeIn(2000);
 
 
   $('#i-c01').on('click', function() { 
